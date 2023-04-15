@@ -44,7 +44,7 @@
             <div class="form-group row  justify-content-center">
                 <label for="password" class="col-sm-3 col-form-label text-right"><b>Password:</b></label>
                 <div class="col-sm-9">
-                    <input type="password" name="password" class="form-control" placeholder="8 kí tự, có 1 kí hoa, 1 kí tự thường" required  pattern= "^(?=.*[a-z])(?=.*[A-Z]).{8}$">
+                    <input type="password" name="password" class="form-control" placeholder="8 kí tự, có ít nhất 1 kí tự hoa" required  pattern= "^(?=.*[a-z])(?=.*[A-Z]).{8}$">
                 </div>
             </div>
             <div class="form-group row justify-content-center">
