@@ -1,5 +1,9 @@
 <?php
 include '../model/pdo.php';
+include '../view/header_client.php'; ?>
+
+<?php
+include '../model/pdo.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -32,6 +36,7 @@ include '../model/pdo.php';
             100% {
                 background-position: 0% 50%;
             }
+
             /* trở lại vị trí ban đầu 0% 50% */
         }
 
@@ -166,54 +171,89 @@ include '../model/pdo.php';
         .btn-buy:hover {
             background-color: darkgreen;
         }
+
+        form {
+            justify-content: center;
+            /* căn form giữa trang */
+            align-items: center;
+            /* căn nội dung form theo chiều dọc */
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            padding: 8px 12px;
+            /* khoảng cách giữa border và nội dung input */
+            border: none;
+            /* bỏ border */
+            border-radius: 4px;
+            /* bo viền cho input */
+            font-size: 16px;
+            /* kích thước chữ */
+            margin-right: 5px;
+            /* khoảng cách giữa 2 input */
+        }
+
+        input[type="text"] {
+            width: 300px;
+            /* độ rộng của input */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0062cc;
+            /* màu nền của input khi hover */
+        }
     </style>
-    <title>Fetch data from database using pdo in php</title>
 </head>
 
 <body>
     <div class="container">
         <br>
-        <h1 class="text-center">SẢN PHẨM CỦA CHÚNG TÔI</h1>
+        <form method="post" action="">
+            <input type="text" name="keyword" placeholder="Nhập từ khóa" required>
+            <input type="submit" name="submit" value="Tìm kiếm">
+        </form>
         <br>
         <div class="row">
             <?php
-            $query = "SELECT * FROM shoes.products";
-            $statement = $conn->prepare($query);
-            $statement->execute();
-            $products = $statement->fetchAll(PDO::FETCH_OBJ);
-            foreach ($products as $product) {
+            if (isset($_POST['submit'])) {
+                $keyword = $_POST['keyword'];
+                $stmt = $conn->prepare("SELECT * FROM products WHERE name LIKE :keyword");
+                $stmt->bindValue(':keyword', '%' . $keyword . '%');
+                $stmt->execute();
+                $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($results as $product) {
             ?>
-                <div class="col-md-4">
-                    <div class="product">
-                        <div class="product-image">
-                            <img src="<?= "data:image/jpeg;base64," . base64_encode($product->image) ?>">
-                        </div>
-                        <div class="product-name text-center"><?= $product->name ?></div>
-                        <div class="product-price text-center"><?= $product->price ?> VND</div>
-                        <div class="product-desc text-center"><?= $product->description ?></div>
-                        <div class="product-action text-center">
-                        <form action="index.php?act=code_donhang" method="post">
-                                                        <input type="hidden" name="id" value="<?=$product->id?>">
-                                                        <label for="quantity">Số lượng:</label>
-                                                        <input type="number" name="quantity" min="1" max="10" >
-                                                        <?php
-                                                            if(isset($_SESSION['username'])){
-                                                                echo '<input class="btn btn-success" type="submit" name="submit_items"  value="Mua Ngay">';
-                                                            }
-                                                            else{
-                                                                echo '<input class="btn btn-success" type="submit" name="submit_items"  value="Mua Ngay" disabled >';
-                                                            }
-                                                        ?>
-                                                    </form>
+                    <div class="col-md-4">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="<?= "data:image/jpeg;base64," . base64_encode($product['image']) ?>">
+                            </div>
+                            <div class="product-name text-center"><?= $product['name'] ?></div>
+                            <div class="product-price text-center"><?= $product['price'] ?> VND</div>
+                            <div class="product-desc text-center"><?= $product['description'] ?></div>
+                            <div class="product-action text-center">
+                                <form action="index.php?act=code_donhang" method="post">
+                                    <input type="hidden" name="id" value="<?= $product['id'] ?>">
+                                    <label for="quantity">Số lượng:</label>
+                                    <input type="number" name="quantity" min="1" max="10">
+                                    <?php
+                                    if (isset($_SESSION['username'])) {
+                                        echo '<input class="btn btn-success" type="submit" name="submit_items"  value="Mua Ngay">';
+                                    } else {
+                                        echo '<input class="btn btn-success" type="submit" name="submit_items"  value="Mua Ngay" disabled >';
+                                    }
+                                    ?>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
             <?php
-            }
-            ?>
+                }
+            } else echo '<h1>KHÔNG CÓ SẢN PHẨM NÀO.</h1>' ?> 
+
         </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -77,6 +77,10 @@
                 unset($_SESSION['username']);
                 include "../view/home_client.php";
                 break;
+            case 'code_search':
+                include "../view/header_client.php";
+                include "../view/search.php";
+                break;
             default:
                 include "../view/header_client.php";
                 include "../view/home_client.php";
