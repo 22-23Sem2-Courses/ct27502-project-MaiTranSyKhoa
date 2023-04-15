@@ -249,7 +249,8 @@ include '../model/pdo.php';
                     </div>
             <?php
                 }
-            } else echo '<h1>KHÔNG CÓ SẢN PHẨM NÀO.</h1>' ?> 
+
+            }else echo '<h1>BẠN CHƯA TÌM KIẾM SẢN PHẨM NÀO</h1>' ?> 
 
         </div>
     </div>
