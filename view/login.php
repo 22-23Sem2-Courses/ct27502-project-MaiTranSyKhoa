@@ -9,8 +9,23 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
     <style>
+        body{
+            
+        }
         form{
             border: 1px solid black;
+        }
+        h2 {
+        text-align: center; /* canh giữa nội dung của thẻ */
+        font-size: 32px; /* kích thước chữ */
+        font-weight: bold; /* độ đậm của chữ */
+        color: #333; /* màu chữ */
+        text-transform: uppercase; /* chữ in hoa */
+        letter-spacing: 2px; /* khoảng cách giữa các chữ cái */
+        margin-top: 20px; /* khoảng cách từ phía trên của thẻ đến đầu trang */
+        margin-bottom: 20px; /* khoảng cách từ phía dưới của thẻ đến các phần tử khác */
+        border-bottom: 2px solid #333; /* đường viền bên dưới của thẻ */
+        padding-bottom: 10px; /* khoảng cách giữa đường viền và nội dung của thẻ */
         }
     </style>
 </head>
