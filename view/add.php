@@ -34,19 +34,19 @@
                         
                         <form action="index.php?act=code_add" method="POST" enctype="multipart/form-data">
                             <div class="mb-3">
-                                <label>Name</label>
+                                <label><b>Name</b></label>
                                 <input type="text" name="name" class="form-control" required />
                             </div>
                             <div class="mb-3">
-                                <label>Description</label>
+                                <label><b>Description</b></label>
                                 <input type="text" name="description" class="form-control" required />
                             </div>
                             <div class="mb-3">
-                                <label>Price</label>
+                                <label><b>Price</b></label>
                                 <input type="number" name="price" class="form-control" required />
                             </div>
                             <div class="mb-3">
-                                <label>Image</label>
+                                <label><b>Image</b></label>
                                 <input type="file" name="image" class="form-control" required />
                             </div>
                             
