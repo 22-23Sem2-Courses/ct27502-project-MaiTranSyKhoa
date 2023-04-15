@@ -53,6 +53,7 @@
         width: 300px;
     }
     .h1{
+        margin-left:20px;
         color: rgb(246, 50, 1);
     }
     .table1{
@@ -69,6 +70,10 @@
     }
     .a3{
         color: rgb(1, 21, 246);
+    }
+
+    h5{
+        color: green;
     }
     </style>
 </head>
@@ -87,7 +92,8 @@
                         $statement->execute();
                         $statement->setFetchMode(PDO::FETCH_OBJ); //PDO::FETCH_ASSOC
                         $result = $statement->fetchAll();
-
+                        $a= 0;
+                        $b =0;
                         ?>
                         <?php  
                         if($result){
@@ -102,9 +108,8 @@
                                 $statement2->setFetchMode(PDO::FETCH_OBJ); //PDO::FETCH_ASSOC
                                 $result2 = $statement2->fetchAll();
                                 if($result2){
-                                    foreach($result2 as $row2){       
-                ?>                      
-                                    <table class="table table-bordered table-striped">
+                                    ?>
+                                     <table class="table table-bordered table-striped">
                                     <thead >
                                         <tr  style="background-color: black;color:white">
                                             <th>Name</th>
@@ -112,24 +117,35 @@
                                             <th>Price</th>
                                             <th>Image</th>
                                             <th>Quantity</th>
+                                            <th>Total</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><?= $row2->name; ?></td>
-                                            <td><?= $row2->description; ?></td>
-                                            <td><?= $row2->price; ?></td>
-                                            <td>
-                <?php                                                         
-                                            echo "<img src='data:image/jpeg;base64," . base64_encode($row2->image) . "'><br><br>";
-                ?>
-                                            </td>
-                                            <td>
-                                                <?= $row2->quantity; ?>
-                                            </td>
-                                        </tr>
-                <?php
-                                    }
+                                    <?php
+                                    foreach($result2 as $row2){       
+                ?>                      
+                                        <tbody>
+                                            <tr>
+                                                <td><?= $row2->name; ?></td>
+                                                <td><?= $row2->description; ?></td>
+                                                <td><?= $row2->price; ?></td>
+                                                <td>
+                    <?php                                                         
+                                                echo "<img src='data:image/jpeg;base64," . base64_encode($row2->image) . "'><br><br>";
+                    ?>
+                                                </td>
+                                                <td>
+                                                    <?= $row2->quantity; ?>
+                                                </td>
+                                                <td>
+                                                    <?php $a = $row2->price * $row2->quantity;
+                                                            $b = $b + $a;
+                                                            echo "<b>$a</b>";
+                                                            ?>
+                                                </td>
+                
+                                            </tr>
+                    <?php
+                                        }
                                 }else{
                 ?>
                                         <tr>
@@ -137,6 +153,8 @@
                                         </tr>
                 <?php
                                     }
+                                    echo "<h5 style='margin-left:20px'>Tổng Tiền = $b VND</h5>"; 
+                                    $b = 0;
                             }
                 ?>
             </tbody>
