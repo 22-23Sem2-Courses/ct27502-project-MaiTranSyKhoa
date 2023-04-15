@@ -1,0 +1,78 @@
+.row{
+    margin-top: 20px;
+}
+
+a h2:hover{
+    color: #ed4190;
+}
+
+#danhmuc{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#col1_danhmuc{
+    width: 600px; 
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+
+div h5 a{
+    color: white;
+}
+
+div h5 a:hover{
+    color: orangered;
+}
+
+#giaynam, #giaynu ,#dongsp{
+    text-align: center;
+    margin-top: 50px;
+}
+h4:hover{
+    text-align: center;
+    display: block;
+    width: 300px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.button{
+    background-color: black;
+    color: white ;
+    font-family:'Times New Roman', Times, serif;
+    box-shadow: 0 0 2px 2px #ed4190, 0 0 2px 2px #ed4190;
+}
+
+.button:hover{
+    background-color: white;
+    color: #ed4190;
+    box-shadow: 0 0 2px 2px black, 0 0 2px 2px  greenyellow;
+ 
+}
+
+.tt{
+    color: black;
+}
+
+.text1{
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #ed4190;
+}
+.text{
+    font-weight: bold;
+    text-shadow: 5px 5px 10px orangered;
+}
+
+.content_GT{
+    font-weight: bold;
+    margin-top: 10px;
+    border-left: 3px solid turquoise;
+    padding: 10px;
+}
+
+.content_GT2{
+    padding-left: 4px;
+    background-color: #a7ebeb;
+}

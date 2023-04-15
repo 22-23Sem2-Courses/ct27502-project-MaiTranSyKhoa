@@ -1,0 +1,72 @@
+h1{
+    margin-top: 30px;
+    text-align: center;
+    color: orangered;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 0 #00000066, 0 0 15px 0 #0000004d;
+}
+.td{
+    width: 100%;
+}
+.sign_in{
+    text-align: center;
+}
+
+.td{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.td2{
+   background-color: rgb(227, 66, 111);
+    margin: 1px 2px;
+    border-radius: 51px;
+}
+
+#name, #psw,#phone,#email, #psw1{
+    background-color: rgb(208, 232, 233);
+    color: black;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#name:hover{
+    box-shadow: 1px 1px 1px 1px rgb(0, 242, 255), 1px 1px 1px 1px rgb(0, 242, 255) ;
+}
+#psw:hover{
+    box-shadow: 1px 1px 1px 1px rgb(0, 242, 255), 1px 1px 1px 1px rgb(0, 242, 255) ;
+}
+#psw1:hover{
+    box-shadow: 1px 1px 1px 1px rgb(0, 242, 255), 1px 1px 1px 1px rgb(0, 242, 255) ;
+}
+#email:hover{
+    box-shadow: 1px 1px 1px 1px rgb(0, 242, 255), 1px 1px 1px 1px rgb(0, 242, 255) ;
+}
+#phone:hover{
+    box-shadow: 1px 1px 1px 1px rgb(0, 242, 255), 1px 1px 1px 1px rgb(0, 242, 255) ;
+}
+.button{
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sign_up{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.container_frm{
+    margin: 0 auto;
+}
+
