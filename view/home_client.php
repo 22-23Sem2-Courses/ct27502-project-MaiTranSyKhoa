@@ -66,16 +66,16 @@
             <div class="row">
                 <div class="col">
                     <span>
-                        <a href="https://ananas.vn/product-list/?gender=&category=&attribute=black"><img  style="width: 600px; height: 350px;" src="images/trangchu/banner-phụ_2m-600x320.jpg" alt=""></a>
-                        <a href="https://ananas.vn/product-list/?gender=&category=&attribute=black" style="color: black;"><h2>ALL BLACK IN BLACKS</h2></a>
+                        <a href="#"><img  style="width: 600px; height: 350px;" src="images/trangchu/banner-phụ_2m-600x320.jpg" alt=""></a>
+                        <a href="#" style="color: black;"><h2>ALL BLACK IN BLACKS</h2></a>
                         </br>
                         Mặc dù được ứng rất nhiều, nhưng đến sắc đen lúc nào cũng toát lên  một vẻ huyền bí không nhàm chán.
                     </span>
                 </div>
                 <div class="col">
                     <span>
-                        <a href="https://ananas.vn/promotion/clearance-sale/"><img  style="width: 600px; height: 350px;" src="images/trangchu/Banner_Sale-off-1.jpg" alt=""></a>
-                        <a href="https://ananas.vn/promotion/clearance-sale/" style="color: black;"><h2>OUTLET SALE</h2> </a>
+                        <a href="#"><img  style="width: 600px; height: 350px;" src="images/trangchu/Banner_Sale-off-1.jpg" alt=""></a>
+                        <a href="#" style="color: black;"><h2>OUTLET SALE</h2> </a>
                         </br>
                         Danh mục những sản phẩm bán tại "giá tốt hơn" chỉ được bán kênh online - Online Only, chúng đã từng làm mưa làm gió một thời và hiện đang
                         rơi vào tình trạng bể size, bể số.
@@ -92,28 +92,28 @@
                     <div id="giaynam">
                         <h4 style="color: #ed4290;">GIÀY NAM</h4>
                         </br>
-                        <h5><a href="https://ananas.vn/product-list/?gender=men&category=shoes&attribute=new-arrival">New Arrivals</a></h5>
-                        <h5><a href="https://ananas.vn/product-list/?gender=men&category=shoes&attribute=best-seller">Best Seller</a></h5>
-                        <h5><a href="https://ananas.vn/product-list/?gender=men&category=shoes&attribute=sale-off">Sale Off</a></h5>
+                        <h5><a href="#">New Arrivals</a></h5>
+                        <h5><a href="#">Best Seller</a></h5>
+                        <h5><a href="#">Sale Off</a></h5>
                     </div>
                 </div>
                 <div class="col" id="col1_danhmuc" style="background-image: url('images/trangchu/catalogy-2.jpg');">
                     <div id="giaynu">
                         <h4 style="color: #ed4290 ;">GIÀY NỮ</h4>
                         </br>
-                        <h5><a href="https://ananas.vn/product-list/?gender=women&category=shoes&attribute=new-arrival">New Arrivals</a></h5>
-                        <h5><a href="https://ananas.vn/product-list/?gender=women&category=shoes&attribute=best-seller">Best Seller</a></h5>
-                        <h5><a href="https://ananas.vn/product-list/?gender=women&category=shoes&attribute=sale-off">Sale Off</a></h5>
+                        <h5><a href="#">New Arrivals</a></h5>
+                        <h5><a href="#">Best Seller</a></h5>
+                        <h5><a href="#">Sale Off</a></h5>
                     </div>
                 </div>
                 <div class="col" id="col1_danhmuc" style="background-image: url('images/trangchu/catalogy-3.jpg');">
                     <div id="dongsp">
                         <h4 style="color: #ed4290;">DÒNG SẢN PHẨM</h4>
                         </br>
-                        <h5><a href="https://ananas.vn/product-list/?gender=&category=&attribute=basas">Basas</a></h5>
-                        <h5><a href="https://ananas.vn/product-list/?gender=&category=&attribute=vintas">Vintas</a></h5>
-                        <h5><a href="https://ananas.vn/product-list/?gender=&category=&attribute=urbas">Urbas </a></h5>
-                        <h5><a href="https://ananas.vn/product-list/?gender=&category=&attribute=pattas">Pattas</a></h5>
+                        <h5><a href="#">Basas</a></h5>
+                        <h5><a href="#">Vintas</a></h5>
+                        <h5><a href="#">Urbas </a></h5>
+                        <h5><a href="#">Pattas</a></h5>
                     </div>
                 </div>
             </div>
@@ -167,48 +167,48 @@
                     <div class="row">
                         <h1 style="text-align: center;margin-bottom: 30px;"><span class="text">TIN TỨC VÀ BÀI VIẾT</span> </h1>
                         <div class="col-sm-6"><img src="images/trangchu/urbas.hpg.jpg" alt="">
-                            <a href="https://ananas.vn/urbas-corluray-pack/">
+                            <a href="">
                                 <h2 class="tt">URBAS CORLURAY PACK </h2>
                             </a>
                             <p>
                                 Urbas Corluray Pack đem đến lựa chọn “làm mới mình” với sự kết hợp 5 gam màu mang sắc thu; phù hợp với những người trẻ năng động, mong muốn thể
                             </p>
                             <p>
-                                <a href="https://ananas.vn/urbas-corluray-pack/"><i id="dt" style="color: orangered;" >Đọc thêm</i></a></p>
+                                <a href="#"><i id="dt" style="color: orangered;" >Đọc thêm</i></a></p>
                         </div>
                         <div class="col-sm-6"><img src="images/trangchu/vintas.jpg" alt="">
-                            <a href="https://ananas.vn/cam-hung-vintas-saigon-1980s/">
+                            <a href="#">
                                 <h2 class="tt">VINTAS SAIGON 1980S</h2>
                             </a>
                             <p>
                                 Với bộ 5 sản phẩm, Vintas Saigon 1980s Pack đem đến một sự lựa chọn “cũ kỹ thú vị” cho những người trẻ sống giữa thời hiện đại nhưng lại yêu nét
                             </p>
                             <p>
-                                <a href="https://ananas.vn/cam-hung-vintas-saigon-1980s/"><i id="dt" style="color: orangered;">Đọc thêm</i></a>
+                                <a href="#"><i id="dt" style="color: orangered;">Đọc thêm</i></a>
                             </p>
                         </div>
                     </div>
                     <div class="row" class="row_distance">
                         <div class="col-sm-6"><img style="margin-top: 27px;" src="images/trangchu/sneaker.jpg" alt="">
-                            <a href="https://ananas.vn/sneaker-fest-vietnam-va-su-ket-hop/">
+                            <a href="#">
                                 <H2 class="tt">SNEAKER FEST VIETNAM </H2>
                             </a>
                             <p>
                                 Việc sử dụng dáng giày Vulcanized High Top của Ananas trong thiết kế và cảm hứng bắt nguồn từ linh vật Peeping - đại diện cho tinh thần xuyên
                             </p>
                             <p>
-                                <a href="https://ananas.vn/sneaker-fest-vietnam-va-su-ket-hop/"><i id="dt" style="color: orangered;">Đọc thêm</i></a>
+                                <a href="#"><i id="dt" style="color: orangered;">Đọc thêm</i></a>
                             </p>
                         </div>
                         <div class="col-sm-6"><img style="margin-top: 27px;" src="images/trangchu/giai-phau.jpg" alt="">
-                            <a href="https://ananas.vn/anatomy-of-vulcanized/">
+                            <a href="#">
                                 <h2 class="tt">"GIẢI PHẨU GIÀY VULCANIZED</h2>
                             </a>
                             <p>
                                 Trong phạm vi bài viết ngắn hãy cùng nhau tìm hiểu cấu tạo giày Vulcanized Sneaker loại sản phẩm mà Ananas đã chọn làm cốt lỗi để theo đuổi trong...
                             </p>
                             <p>
-                                <a href="https://ananas.vn/anatomy-of-vulcanized/"><i  style="color: orangered;">Đọc thêm</i></a>
+                                <a href="#"><i  style="color: orangered;">Đọc thêm</i></a>
                             </p>
                         </div>
                     </div>
