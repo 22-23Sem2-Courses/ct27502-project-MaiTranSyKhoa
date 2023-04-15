@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
     <style>
-        body{
-            
-        }
         form{
             border: 1px solid black;
         }
@@ -26,6 +23,7 @@
         margin-bottom: 20px; /* khoảng cách từ phía dưới của thẻ đến các phần tử khác */
         border-bottom: 2px solid #333; /* đường viền bên dưới của thẻ */
         padding-bottom: 10px; /* khoảng cách giữa đường viền và nội dung của thẻ */
+        background-image: linear-gradient(pink, white);
         }
     </style>
 </head>
