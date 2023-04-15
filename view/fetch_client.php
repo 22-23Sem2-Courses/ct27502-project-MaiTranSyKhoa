@@ -118,12 +118,12 @@ include '../model/pdo.php';
             font-weight: bold;
             margin: 10px 0;
             text-align: center;
-            width: 200px;
+            width: 100%;
             height: 40px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            font-size: 20px;
+            font-size: 30px;
         }
 
         .product-price {
@@ -138,6 +138,8 @@ include '../model/pdo.php';
             height: 30px;
             overflow: hidden;
             text-overflow: ellipsis;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         .product-action {
