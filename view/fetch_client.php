@@ -195,7 +195,7 @@ include '../model/pdo.php';
                         <form action="index.php?act=code_donhang" method="post">
                                                         <input type="hidden" name="id" value="<?=$product->id?>">
                                                         <label for="quantity">Số lượng:</label>
-                                                        <input type="number" name="quantity" min="1" max="10" >
+                                                        <input type="number" name="quantity" min="1" max="10"  required  default=1>
                                                         <?php
                                                             if(isset($_SESSION['username'])){
                                                                 echo '<input class="btn btn-success" type="submit" name="submit_items"  value="Mua Ngay">';
