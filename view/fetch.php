@@ -12,7 +12,7 @@ include '../model/pdo.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js">
     <title>Danh sách sản phẩm</title>
     <style>
-        img{
+        .imgsp{
             border: solid 1px white;
             border-radius: 5px;
             margin-bottom: -20px;
@@ -71,7 +71,7 @@ include '../model/pdo.php';
                                                 <td><?= $row->price; ?></td>
                                                 <td>
                                                 <?php
-                                                    echo "<img src='data:image/jpeg;base64," . base64_encode($row->image) . "'><br><br>";
+                                                    echo "<img class='imgsp' src='data:image/jpeg;base64," . base64_encode($row->image) . "'><br><br>";
                                                 ?>
                                                 </td>
                                                 <td>
