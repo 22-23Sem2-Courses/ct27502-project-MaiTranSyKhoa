@@ -28,6 +28,7 @@ if(isset($_POST['order'])  && isset($_SESSION['id'])){
     $order_id = $result1[0]['id'];
     $_SESSION['order_id'] = $order_id;
     $a = $_SESSION['order_id'];
+    
     // Chuyen chi iet gio hang va chi tiet order
     $stmt2 =  $conn->prepare("SELECT * from chitietgiohang where user_id=$user_id");
     $stmt2->execute();

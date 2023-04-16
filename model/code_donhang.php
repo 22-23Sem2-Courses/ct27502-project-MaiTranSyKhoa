@@ -16,7 +16,7 @@ if (isset($_POST['submit_items'])) {
     if($result){
         $new_quantity =  $result[0]['quantity'] + $quantity;
         if($new_quantity > 10){
-            echo "<h3 style='margin-top: 100px'>Quá số lượng cho phép</h3> ";
+            echo "<h3 style='margin-top: 100px'>Quá số lượng cho phép(Tối thiểu 10 sản phẩm trên 1 mặt hàng)</h3> ";
             echo"<form action='index.php?act=fetch_donhang' method='post' style='text-align-center'>
                 <input type='submit' class='btn btn-dark' style='color:white' value='Quay lại đơn hàng'/></form>";
         }
