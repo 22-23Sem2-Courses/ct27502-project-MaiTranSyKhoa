@@ -10,6 +10,33 @@
     <title>Home Admin</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/trangchu.css">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, white, rgba(102, 102, 102, 0.8));
+            background-size: 400% 400%;
+            /* thiết lập kích thước ảnh nền lớn hơn kích thước thực */
+            animation: gradient-animation 10s ease infinite;
+            /* thiết lập animation */
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            /* đặt bắt đầu tại vị trí 0% 50% */
+            50% {
+                background-position: 100% 50%;
+            }
+
+            /* di chuyển gradient tới vị trí 100% 50% */
+            100% {
+                background-position: 0% 50%;
+            }
+
+            /* trở lại vị trí ban đầu 0% 50% */
+        }
+    </style>
 </head>
 <body>
 <div class="img_logo">
@@ -21,7 +48,7 @@
             <p id="nav_navbar">
                 <div class="btn-group" class="frm_search">
                     <form class="d-flex" role="search" action="index.php?act=code_search" method="post">
-                        <button class="btn btn-outline-success" type="submit" style="width:150px;">TÌM KIẾM SẢN PHẨM YÊU THÍCH CỦA BẠN</button>
+                        <button class="btn btn-outline-success" type="submit" style="width:350px;">TÌM KIẾM SẢN PHẨM YÊU THÍCH CỦA BẠN</button>
                     </form>
                 </div>
             </p>

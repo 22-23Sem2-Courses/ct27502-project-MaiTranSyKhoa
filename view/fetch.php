@@ -13,8 +13,14 @@ include '../model/pdo.php';
     <title>Danh sách sản phẩm</title>
     <style>
         img{
+            border: solid 1px white;
+            border-radius: 5px;
+            margin-bottom: -20px;
             width: 200px;
             height: 200px;
+        }
+        img:hover{
+            transform: scale(1.05);
         }
         .container{
             text-align: center;

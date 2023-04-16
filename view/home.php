@@ -13,6 +13,31 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/trangchu.css">
     <style>
+        body {
+            background-image: linear-gradient(to bottom right, white, rgba(102, 102, 102, 0.8));
+            background-size: 400% 400%;
+            /* thiết lập kích thước ảnh nền lớn hơn kích thước thực */
+            animation: gradient-animation 10s ease infinite;
+            /* thiết lập animation */
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            /* đặt bắt đầu tại vị trí 0% 50% */
+            50% {
+                background-position: 100% 50%;
+            }
+
+            /* di chuyển gradient tới vị trí 100% 50% */
+            100% {
+                background-position: 0% 50%;
+            }
+
+            /* trở lại vị trí ban đầu 0% 50% */
+        }
         .nd{
             text-align:center;
             margin-top:30px;
