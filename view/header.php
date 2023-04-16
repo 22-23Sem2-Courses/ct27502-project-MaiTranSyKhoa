@@ -38,7 +38,7 @@
                         <a href="index.php?act=fetch" class="a">Danh mục sản phẩm</a>
                     </span>
                     <span  style="padding: 10px;">
-                        <i style="margin-left: 10px;" class="fa-solid fa-cart-shopping"></i>
+                        <i style="margin-left: 10px;" class="fa-solid fa-square-plus"></i>
                         <a href="index.php?act=add" class="a">Thêm sản phẩm</a>
                 </span>
                 <span style="padding: 10px;">

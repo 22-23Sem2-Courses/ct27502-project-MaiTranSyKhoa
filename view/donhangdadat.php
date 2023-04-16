@@ -72,8 +72,9 @@
         color: rgb(1, 21, 246);
     }
 
-    h5{
+    .tongtien{
         color: green;
+        font-size: 1.5rem;
     }
     </style>
 </head>
@@ -153,7 +154,7 @@
                                         </tr>
                 <?php
                                     }
-                                    echo "<h5 style='margin-left:20px'>Tổng Tiền = $b VND</h5>"; 
+                                    echo "<b class='tongtien' style='margin-left:20px'>Tổng Tiền = $b VND</b>"; 
                                     $b = 0;
                             }
                 ?>

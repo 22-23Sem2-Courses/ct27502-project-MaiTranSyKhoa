@@ -22,11 +22,12 @@ include '../model/pdo.php';
             background-color: rgb(236, 226, 117);
             border-radius: 10px; 
         }
-        h5{
-            color: rgb(241, 101, 8);
-        }
         .container{
             text-align: center;
+        }
+        .tongthanhtoan{
+            color: rgb(241, 101, 8);
+            font-size: 1.5rem;
         }
     </style>
   </head>
@@ -171,7 +172,7 @@ include '../model/pdo.php';
                                         <?php
                                     }
                                 ?>
-                                <?php  echo"<h5>Tổng Thanh Toán = $b VND</h5> " ?>
+                                <?php  echo"<b class='tongthanhtoan'>Tổng Thanh Toán = $b VND</b> " ?>
                             </tbody>
                         </table>
                     </div>
