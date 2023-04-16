@@ -25,7 +25,7 @@
                         </strong>
                 </marquee>
             </div>
-            <div class="nav_1 d-flex" style ='margin-left:50%'>
+            <div class="nav_1 d-flex" style ='margin-left:45%; width:1000px'>
                 <span style="padding: 10px;">
                     <i class="fa-solid fa-house"></i>
                     <a href="index.php?act=home_client" class="a">Trang chủ </a>
