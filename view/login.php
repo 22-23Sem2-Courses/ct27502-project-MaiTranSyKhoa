@@ -9,8 +9,30 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
     <style>
-        form{
-            border: 1px solid black;
+        body {
+            background-image: linear-gradient(to bottom right, white, rgba(102, 102, 102, 0.8));
+            background-size: 400% 400%;
+            /* thiết lập kích thước ảnh nền lớn hơn kích thước thực */
+            animation: gradient-animation 10s ease infinite;
+            /* thiết lập animation */
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            /* đặt bắt đầu tại vị trí 0% 50% */
+            50% {
+                background-position: 100% 50%;
+            }
+
+            /* di chuyển gradient tới vị trí 100% 50% */
+            100% {
+                background-position: 0% 50%;
+            }
+
+            /* trở lại vị trí ban đầu 0% 50% */
         }
         h2 {
         text-align: center; /* canh giữa nội dung của thẻ */
@@ -40,7 +62,7 @@
             </div>
             <div class="form-group"  class="a" style="margin-left: 10px">
                 <label for="password"><b>Password:</b></label>
-                <input type="password" class=" form-control" name="password" id="password" placeholder="Nhập vào username" required>
+                <input type="password" class=" form-control" name="password" id="password" placeholder="Mật khẩu" required>
             </div>
             <div class="form-group form-check" class="a" style="margin-left: 16px">
                 <input type="checkbox" name="rm" id="rm" class="form-check-input">
