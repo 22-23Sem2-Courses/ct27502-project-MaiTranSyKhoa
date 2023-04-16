@@ -21,7 +21,7 @@
             <p id="nav_navbar">
                 <div class="btn-group" class="frm_search">
                     <form class="d-flex" role="search" action="index.php?act=code_search" method="post">
-                        <button class="btn btn-outline-success" type="submit" style="width:150px;">TÌM KIẾM SẢN PHẨM YÊU THÍCH CỦA BẠN</button>
+                        <button class="btn btn-outline-success" type="submit" style="width:350px;">TÌM KIẾM SẢN PHẨM YÊU THÍCH CỦA BẠN</button>
                     </form>
                 </div>
             </p>

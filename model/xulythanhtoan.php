@@ -52,6 +52,7 @@ if(isset($_POST['order'])  && isset($_SESSION['id'])){
         echo '<form action="index.php?act=thanhtoan" method="post"  style ="text-align:center;margin:0 auto;">';
         echo '<h3 style="margin-top: 90px;" >Bạn có đồng ý thanh toán không?</h3>';// Chỉ
         echo  '<input type="submit" class="btn btn-success"  name="dongy" value="Đồng ý thanh toán">';
+        echo ' ';
         echo  '<input type="submit" class="btn btn-danger"  name="huy" value="Hủy đơn hàng">';
         echo '</form>';
  

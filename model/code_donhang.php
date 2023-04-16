@@ -72,8 +72,9 @@ if (isset($_POST['submit'])) {
         // Hiển thị thông báo xác nhận xóa
         
         echo "<form  method='post' action='index.php?act=delete_order'  style ='text-align:center;margin:0 auto;'>";
-        echo "<h3 style='margin-top: 90px;'>Bạn có muốn xóa đơn hàng?</h3>";// Chỉnh sửa đường dẫn đến file xử lý xóa đơn hàng (trong trường hợp này là 'delete_order.php')
+        echo "<h3 style='margin-top: 90px;'>Bạn có muốn xóa giỏ hàng?</h3>";// Chỉnh sửa đường dẫn đến file xử lý xóa đơn hàng (trong trường hợp này là 'delete_order.php')
         echo "<input type='submit' class='btn btn-success'  name='confirm_delete' value='Xác nhận'>"; // Nút xác nhận xóa
+        echo ' ';
         echo "<input type='submit' class='btn btn-danger' name='cancel' value='Hủy bỏ'>"; // Nút hủy bỏ
         echo "</form>";
     }
@@ -86,6 +87,7 @@ if (isset($_POST['submit'])) {
     echo "<h3 style='margin-top: 90px;' >Bạn có muốn xóa sản phẩm này không? </h3>";
     echo "<input type='hidden' name='id' value='" . $_POST['id'] . "'>"; // Đưa dữ liệu mã đơn hàng vào trong form
     echo "<input type='submit'  class='btn btn-success' name='delete_1sp' value='Xác nhận'>"; // Nút xác nhận xóa
+    echo ' ';
     echo "<input type='submit' class='btn btn-danger' name='cancel' value='Hủy bỏ'>"; // Nút hủy bỏ
     echo "</form>";
 } 
