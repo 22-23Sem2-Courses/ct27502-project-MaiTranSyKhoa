@@ -28,6 +28,7 @@ if (isset($_POST['submit_items'])) {
             $result1 = $stmt1->execute();
             if($result1){
                 header('location: index.php?act=fetch_donhang');
+                exit(0);
             }
         }
     }
@@ -39,6 +40,7 @@ if (isset($_POST['submit_items'])) {
         $result2 = $stmt2->execute();
         if($result2){
             header('location: index.php?act=fetch_donhang');
+            exit(0);
         }
 
     }
@@ -63,6 +65,7 @@ if (isset($_POST['submit'])) {
         $result4 = $stmt4->execute();
         if($result4){
             header('location: index.php?act=fetch_donhang');
+            exit(0);
         }   
     }
 }

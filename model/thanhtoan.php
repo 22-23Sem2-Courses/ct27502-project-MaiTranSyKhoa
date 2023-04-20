@@ -2,6 +2,7 @@
 include "pdo.php";
 if(isset($_SESSION['id']) && isset($_POST['dongy'])){
     header('location: index.php?act=donhangdadat');
+    exit(0);
 }
 if(isset($_SESSION['id']) && isset($_POST['huy'])){
     $a = $_SESSION['order_id'];
@@ -13,5 +14,6 @@ if(isset($_SESSION['id']) && isset($_POST['huy'])){
     $stmt4->execute();   
     
     header('location: index.php?act=fetch_donhang');
+    exit(0);
 }
 ?>

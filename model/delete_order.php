@@ -5,6 +5,7 @@ if(isset($_POST['confirm_delete'])){
     $stmt->execute();
     if($stmt){
         header('location: index.php?act=fetch_donhang');
+        exit(0);
     }
     else{
         echo "Khong xoa duoc";
@@ -18,10 +19,12 @@ if(isset($_POST['delete_1sp'])){
     $stmt->execute();
     if($stmt){
         header('location: index.php?act=fetch_donhang');
+        exit(0);
     }
 }
 
 if(isset($_POST['cancel'])){
    header('location: index.php?act=fetch_donhang');
+   exit(0);
 }
 ?>

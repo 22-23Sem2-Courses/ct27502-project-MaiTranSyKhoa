@@ -27,10 +27,11 @@ if(isset($_POST['submit']))
       // Điều hướng đến trang tương ứng với vai trò của người dùng
       if ($_SESSION['role'] == 'admin') {
           header('Location: index.php?act=header');
-          
+          exit(0);
       }
       if ($_SESSION['role'] == null) {
             header('Location: index.php?act=home_client'); 
+            exit(0);
         } 
     }  
     else{

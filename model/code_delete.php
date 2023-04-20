@@ -38,5 +38,6 @@ if(isset($_POST['dongy'])){
 
 if(isset($_POST['khongdongy'])){
     header('location: index.php?act=fetch');
+    exit(0);
 }
 ?>
